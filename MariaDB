@@ -1,0 +1,7 @@
+FROM mariadb:latest
+
+VOLUME ["/var/lib/mysql"]
+COPY doc.sql /docker-entrypoint-initdb.d/
+EXPOSE 3306
+
+
